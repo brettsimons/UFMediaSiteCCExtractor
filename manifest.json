@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "UF Mediasite Closed Captioning Extractor",
+  "description": "Extracts the closed captioning of UF Mediasite videos if available so that it can be copied to another file for easier note taking.",
+  "version": "1.7",
+  
+  "background": {
+	"page": "background.html"
+  },
+  
+  "icons": {
+	"19": "icon.png",
+	"48": "icon48.png",
+	"128": "icon128.png"
+  },
+
+  "page_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  
+  "permissions": [
+	"tabs",
+	"webRequest",
+	"https://mediasite.video.ufl.edu/Mediasite/Play/*,http://mediasite.video.ufl.edu/Mediasite/Play/*,https://warrington.video.ufl.edu/Mediasite/Play/*",
+	"clipboardWrite"
+  ]
+}
